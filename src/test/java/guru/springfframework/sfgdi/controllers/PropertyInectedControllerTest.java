@@ -8,11 +8,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class PropertyInectedControllerTest {
 
-    PropertyInectedController controller;
+    PropertyInjectedController controller;
 
     @BeforeEach
     void setUp() {
-        controller = new PropertyInectedController();
+        controller = new PropertyInjectedController();
 
         controller.greetingService = new GreetingServiceImpl();
     }

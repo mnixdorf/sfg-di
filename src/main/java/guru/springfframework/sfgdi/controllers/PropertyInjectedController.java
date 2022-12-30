@@ -1,8 +1,12 @@
 package guru.springfframework.sfgdi.controllers;
 
 import guru.springfframework.sfgdi.services.GreetingService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 
-public class PropertyInectedController {
+@Controller
+public class PropertyInjectedController {
+    @Autowired
     public GreetingService greetingService;
 
     public String getGreeting(){
