@@ -1,9 +1,6 @@
 package guru.springfframework.sfgdi;
 
-import guru.springfframework.sfgdi.controllers.ConstructorInjectedController;
-import guru.springfframework.sfgdi.controllers.MyController;
-import guru.springfframework.sfgdi.controllers.PropertyInjectedController;
-import guru.springfframework.sfgdi.controllers.SetterInjectedController;
+import guru.springfframework.sfgdi.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -14,6 +11,9 @@ public class SfgDiApplication {
 	public static void main(String[] args) {
 
 		ApplicationContext ctx = SpringApplication.run(SfgDiApplication.class, args);
+
+		I18nController i18NController = (I18nController) ctx.getBean("i18nController");
+		System.out.println(i18NController.sayHello());
 
 		MyController myController = (MyController) ctx.getBean("myController"); //has to be lower case from spring, must not be created -> is done by string
 		//no webserver configured
