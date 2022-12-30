@@ -18,9 +18,9 @@ public class SfgDiApplication {
 		MyController myController = (MyController) ctx.getBean("myController"); //has to be lower case from spring, must not be created -> is done by string
 		//no webserver configured
 
-		String greeting = myController.sayHello();
+		System.out.println("-------------- Primary Bean");
 
-		System.out.println(greeting);
+		System.out.println(myController.sayHello());
 
 		System.out.println("------------ Property");
 
