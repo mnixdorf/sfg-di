@@ -3,6 +3,9 @@ package guru.springfframework.sfgdi.controllers;
 import guru.springfframework.sfgdi.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
+/**
+ * Created by jt on 12/26/19.
+ */
 @Controller
 public class MyController {
 
@@ -14,5 +17,5 @@ public class MyController {
 
     public String sayHello(){
         return greetingService.sayGreeting();
-    };
+    }
 }
