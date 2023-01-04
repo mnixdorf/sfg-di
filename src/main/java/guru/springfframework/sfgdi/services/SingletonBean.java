@@ -2,7 +2,7 @@ package guru.springfframework.sfgdi.services;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component //scope not needed, singleton is default bean
 public class SingletonBean { //resource efficient in comparison to prototype beans
 
     public SingletonBean() {
