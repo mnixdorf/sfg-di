@@ -9,7 +9,7 @@ import guru.springfframework.sfgdi.services.*;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.*;
 
-@PropertySource("classpath:datasource.properties") //because it is in resources folder
+//@PropertySource("classpath:datasource.properties") //because it is in resources folder
 @ImportResource("classpath:sfgdi-config.xml") //can also be put in Application
 @Configuration
 public class GreetingServiceConfig {
